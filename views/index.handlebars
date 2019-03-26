@@ -1,0 +1,30 @@
+<section class="py-2">
+    <div class="row">
+        <diV class="col-md-6 text-center">
+            <h1 class="display-3 mt-3 pt-5">
+                Cooking Ebook
+            </h1>
+            <p class="lead">Learn how to cook</p>
+                <form action="/charge" method="POST">
+                    <script
+                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                        data-key="pk_test_GkN16XrK5RAuAzEyPwlnXTT1"
+                        data-amount="2500"
+                        data-name="Cooking ebook"
+                        data-description="cooking ebook by victor"
+                        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                        data-locale="auto">
+                    </script>
+                    <script>
+                        //hide default stripe button --optional
+                        document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+                    </script>
+                    <button type="submit" class="btn btn-outline-dark text-white btn-lg">Purchase for $2500</button>
+                </form>
+        </diV>
+        <div class="col-md-6">
+            <img src="/img/book.png">
+        </div>
+
+    </div>
+</section>
